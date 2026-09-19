@@ -86,7 +86,7 @@ export function HeroSection() {
             <div className="gold-divider w-32" aria-hidden />
             <div className="flex flex-col items-center gap-1.5">
               <p className="font-sans text-sm font-medium uppercase tracking-[0.25em] text-[#D4AF37]">
-                {event.akad.day}, {new Date(event.akad.date).toLocaleDateString("id-ID", {
+                {event.akad.day}, {new Date(event.akad.date).toLocaleDateString("en-IN", {
                   day: "numeric",
                   month: "long",
                   year: "numeric",

@@ -196,7 +196,7 @@ export function GuestbookSection() {
 
                   <Textarea
                     label="Message & Wishes"
-                    placeholder="Write your heartfelt wishes for Arga & Nimas..."
+                    placeholder="Write your heartfelt wishes for Aarsh & Devika..."
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     error={errors.message}

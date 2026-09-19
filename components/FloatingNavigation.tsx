@@ -10,14 +10,14 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { id: "hero", label: "Beranda" },
-  { id: "countdown", label: "Hitung Mundur" },
-  { id: "event", label: "Acara" },
-  { id: "gallery", label: "Galeri" },
-  { id: "story", label: "Cerita" },
+  { id: "hero", label: "Home page" },
+  { id: "countdown", label: "Countdown" },
+  { id: "event", label: "Event Details" },
+  // { id: "gallery", label: "Gallery" },
+  { id: "story", label: "Wedding Festivities" },
   { id: "rsvp", label: "RSVP" },
-  { id: "guestbook", label: "Ucapan" },
-  { id: "gift", label: "Hadiah" },
+  { id: "guestbook", label: "Guestbook" },
+  // { id: "gift", label: "Gift" },
 ];
 
 export function FloatingNavigation() {

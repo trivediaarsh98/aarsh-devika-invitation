@@ -2,7 +2,7 @@ export const APPS_SCRIPT_URL =
   process.env.NEXT_PUBLIC_APPS_SCRIPT_URL ?? "";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://arga-nimas.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://aarsh-devika-invitation.vercel.app/";
 
 export const RSVP_COOLDOWN_MS = 30_000;
 export const GUESTBOOK_COOLDOWN_MS = 15_000;
