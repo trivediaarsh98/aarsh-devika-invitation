@@ -14,6 +14,11 @@ import { ATTENDANCE_OPTIONS, MAX_MESSAGE_LENGTH } from "@/lib/constants";
 import type { AttendanceStatus } from "@/types/invitation";
 import { cn } from "@/lib/utils";
 
+// Adding the invite type to the RSVP payload
+interface RsvpSectionProps {
+  inviteType: boolean;
+}
+
 interface FormErrors {
   name?: string;
   attendance?: string;
@@ -21,7 +26,7 @@ interface FormErrors {
   message?: string;
 }
 
-export function RsvpSection() {
+export function RsvpSection({ inviteType }: RsvpSectionProps) {
   const { state, submit, reset } = useRsvp();
   const [name, setName] = useState("");
   const [attendance, setAttendance] = useState<AttendanceStatus>("attending");
@@ -33,7 +38,7 @@ export function RsvpSection() {
     e.preventDefault();
     setErrors({});
 
-    const parsed = rsvpSchema.safeParse({ name, attendance, guestCount, message });
+    const parsed = rsvpSchema.safeParse({ name, attendance, guestCount, message, inviteType });
     if (!parsed.success) {
       const fe: FormErrors = {};
       for (const issue of parsed.error.issues) {

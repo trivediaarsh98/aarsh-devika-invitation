@@ -65,6 +65,7 @@ export async function submitRsvp(
     attendance: payload.attendance,
     guestCount: payload.guestCount,
     message: sanitizeMessage(payload.message),
+    inviteType: payload.inviteType,
     userAgent:
       typeof navigator !== "undefined"
         ? navigator.userAgent.slice(0, 200)

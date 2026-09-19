@@ -40,9 +40,18 @@ function useGuestNameFromUrl(): string {
   return decoded || "Invited guests";
 }
 
+function useInviteTypeFromUrl(): boolean {
+  if (typeof window === "undefined") return true;
+  const params = new URLSearchParams(window.location.search);
+  const type = params.get("type");
+  const rawType = decodeURIComponent(type ?? "").trim().toLowerCase();
+  return rawType !== "wedding" && rawType !== "w" && rawType !== "true" && rawType !== "1";
+}
+ 
 export default function WeddingPage() {
   const [opened, setOpened] = useState(false);
   const guestName = useGuestNameFromUrl();
+  const inviteType = useInviteTypeFromUrl();
 
   return (
     <>
@@ -70,8 +79,10 @@ export default function WeddingPage() {
             >
               {/* <GallerySection /> */}
             </Suspense>
-            <StorySection />
-            <RsvpSection />
+             {inviteType && (
+              <StorySection />)
+              }
+            <RsvpSection inviteType={inviteType} />
             <Suspense
               fallback={
                 <LoadingState

@@ -25,6 +25,7 @@ export const rsvpSchema = z.object({
     .max(MAX_MESSAGE_LENGTH, `Message must be at most ${MAX_MESSAGE_LENGTH} characters long.`)
     .optional()
     .default(""),
+  inviteType: z.boolean().optional().default(true),
 });
 
 export const guestbookSchema = z.object({

@@ -62,6 +62,7 @@ export interface RsvpPayload {
   attendance: AttendanceStatus;
   guestCount: number;
   message: string;
+  inviteType: boolean;
 }
 
 export interface GuestbookPayload {

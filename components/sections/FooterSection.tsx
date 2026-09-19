@@ -66,6 +66,9 @@ export function FooterSection() {
             size="xl"
             className="leading-tight"
           />
+          <p className="font-sans text-m text-[color:var(--text-muted)]">
+            With best compliments from Divya, Pradeep, Trisha, and Nair Family
+          </p>
           <p className="mt-2 font-sans text-sm text-[color:var(--text-muted)] tracking-wider">
             {hashtag}
           </p>
