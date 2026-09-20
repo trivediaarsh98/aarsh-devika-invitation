@@ -77,7 +77,7 @@ export default function WeddingPage() {
                 <LoadingState message="Loading gallery..." className="py-24" />
               }
             >
-              {/* <GallerySection /> */}
+              <GallerySection />
             </Suspense>
              {inviteType && (
               <StorySection />)

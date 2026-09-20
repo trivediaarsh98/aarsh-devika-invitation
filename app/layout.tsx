@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     "2026",
     "#AarshDevika2026",
   ],
-  authors: [{ name: "Arga & Nimas" }],
-  creator: "Arga & Nimas",
+  authors: [{ name: "Aarsh & Devika" }],
+  creator: "Aarsh & Devika",
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: SITE_URL,
@@ -57,13 +57,13 @@ export const metadata: Metadata = {
     description:
       "We invite you to witness our wedding and offer your blessings. Saturday, December 3, 2026,",
     siteName: "Wedding Invitation Aarsh & Devika",
-    locale: "id_ID",
+    locale: "en_IN",
     images: [
       {
         url: `${SITE_URL}/images/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Pernikahan Aarsh & Devika",
+        alt: "Wedding Aarsh & Devika",
       },
     ],
   },

@@ -27,6 +27,16 @@ export function MusicPlayer({
 
     audio.addEventListener("canplaythrough", onCanPlay);
     audio.addEventListener("ended", onEnded);
+
+    //To handle autoplay
+    // The browser will allow this because the user just clicked the "Open" button.
+    audio.volume = 0.5;
+    audio.loop = true;
+    audio.play().catch((err) => {
+      console.log("Autoplay blocked by browser:", err);
+    });
+    setPlaying(true);
+
     return () => {
       audio.removeEventListener("canplaythrough", onCanPlay);
       audio.removeEventListener("ended", onEnded);
@@ -54,7 +64,7 @@ export function MusicPlayer({
 
   return (
     <>
-      <audio ref={audioRef} src={src} preload="metadata" aria-hidden />
+      <audio id="wedding-audio" ref={audioRef} src={src} preload="metadata" aria-hidden />
       <motion.button
         onClick={togglePlay}
         className={cn(
