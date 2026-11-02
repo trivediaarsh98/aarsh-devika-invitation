@@ -44,14 +44,14 @@ export function HeroSection() {
             transition={{ duration: 1.1, delay: 0.4, ease: [0.19, 1, 0.22, 1] }}
             className="gold-shimmer-text font-serif text-5xl font-bold leading-tight tracking-wide sm:text-6xl md:text-7xl lg:text-8xl"
           >
-            {couple.brideFull}
+            {couple.groomFull}
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             className="gold-shimmer-text font-serif text-3xl font-bold leading-tight tracking-wide sm:text-3xl md:text-4xl lg:text-5xl"
             >
-              <p className="font-serif text-lg italic text-[#D4AF37]"> {couple.brideParents}</p>
+              <p className="font-serif text-lg italic text-[#D4AF37]"> {couple.groomParents}</p>
             </motion.div>
 
           <motion.div
@@ -70,14 +70,14 @@ export function HeroSection() {
             transition={{ duration: 1.1, delay: 0.5, ease: [0.19, 1, 0.22, 1] }}
             className="gold-shimmer-text font-serif text-5xl font-bold leading-tight tracking-wide sm:text-6xl md:text-7xl lg:text-8xl"
           >
-            {couple.groomFull}
+            {couple.brideFull}
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             className="gold-shimmer-text font-serif text-3xl font-bold leading-tight tracking-wide sm:text-3xl md:text-4xl lg:text-5xl"
             >
-              <p className="font-serif text-lg italic text-[#D4AF37]"> {couple.groomParents}</p>
+              <p className="font-serif text-lg italic text-[#D4AF37]"> {couple.brideParents}</p>
             </motion.div>
         </div>
 

@@ -66,7 +66,7 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
               className="flex flex-col items-center gap-2"
             >
               <GoldShimmerText
-                text={couple.brideFull}
+                text={couple.groomFull}
                 size="lg"
                 as="h1"
                 className="leading-tight"
@@ -81,7 +81,7 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
                 &
               </motion.span>
               <GoldShimmerText
-                text={couple.groomFull}
+                text={couple.brideFull}
                 size="lg"
                 as="h1"
                 className="leading-tight"

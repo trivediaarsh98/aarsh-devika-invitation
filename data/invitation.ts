@@ -6,7 +6,7 @@ export const invitationData: InvitationData = {
     bride: "Devika",
     groomFull: "Aarsh Trivedi",
     brideFull: "Devika Nair",
-    groomParents: "S/o Mr. Paras & Mrs. Palak Trivedi",
+    groomParents: "S/o Mrs. Palak & Mr. Premal Trivedi",
     brideParents: "D/o Adv. Thara & Late Adv. Anil Nair",
   },
   event: {
@@ -41,14 +41,14 @@ export const invitationData: InvitationData = {
     accountNumber: "2391034674", // Update with actual account details
   },
   story: [
-    {
-      year: "30th November 2026 | 03:00 PM",
-      title: "Mehendi Ceremony",
-      description:
-        "At Devika's place - 10/2,Coroment Society, Sector-27, Pradhikaran.", // You can customize this story
-      dresscode: "Sage, Mint, Olive, Emerald",
-      src: null,
-    },
+    // {
+    //   year: "30th November 2026 | 03:00 PM",
+    //   title: "Mehendi Ceremony",
+    //   description:
+    //     "At Devika's place - 10/2,Coroment Society, Sector-27, Pradhikaran.", // You can customize this story
+    //   dresscode: "Sage, Mint, Olive, Emerald",
+    //   src: null,
+    // },
     {
       year: "1st December 2026 | 07:00 PM",
       title: "Starry Sangeet Night",
