@@ -74,7 +74,7 @@ export function FooterSection() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-3">
+        {/* <div className="flex flex-col items-center gap-3">
           <p className="font-sans text-sm text-[color:var(--text-secondary)] max-w-xs">
             Share this invitation with family and friends you wish to bring along.
           </p>
@@ -113,7 +113,7 @@ export function FooterSection() {
               </AnimatePresence>
             </Button>
           </motion.div>
-        </div>
+        </div> */}
 
         <div className="gold-divider w-full" aria-hidden />
 
