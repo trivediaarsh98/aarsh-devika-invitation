@@ -58,19 +58,27 @@ export const invitationData: InvitationData = {
       src: null,
     },
     {
-      year: "2nd December 2026 | 09:00 AM",
-      title: "Ashirwad (Paan & Pranaam)",
+      year: "2nd December 2026 | 9:30 AM",
+      title: "Mosalu Ceremony",
       description:
         "At Palm Manor, Lonavala. Seeking blessings from elders before the big day.",
-      dresscode: "South Indian Traditional Attire",
+      dresscode: "Casual Traditional Attire",
       src: null,
     },
     {
-      year: "2nd December 2026 | 11:30 AM",
+      year: "2nd December 2026 | 11:00 AM",
       title: "Haldi Carnival",
       description:
         "At Palm Manor, Lonavala. A vibrant celebration with colors and joy.",
       dresscode: "Sun kissed Yellows & Brights - Breezy, Comfortable",
+      src: null,
+    },
+    {
+      year: "2nd December 2026 | 4:00 PM",
+      title: "Pallu Ceremony",
+      description:
+        "At Palm Manor, Lonavala. A vibrant celebration with colors and joy.",
+      dresscode: "Traditional Attire",
       src: null,
     },
     {
